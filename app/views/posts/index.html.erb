@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Photo Blog</h1>
+<%= link_to 'New Post', new_post_path %>
+
+
+  <% @posts.each do |post| %>
+    <h2><%= link_to post.title, post %></h2>
+      <%= image_tag(post.image.profile_size.url) %>
+      <%= post.description %>
+
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+<br>
+
