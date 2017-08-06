@@ -24,8 +24,8 @@ default: &default
 development:
   <<: *default
   database: t-retrato_development
-  username: codegracie
-  password: fromasia
+  username: <%= ENV['T-RETRATO_USER_NAME'] %>
+  password: <%= ENV['T-RETRATO_DATABASE_PASSWORD'] %>
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
