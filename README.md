@@ -1,4 +1,4 @@
 # Retrato
 
-My demo photo blog app using figaro and aws.
+My demo photo blog app using figaro and aws. Enjoy!
 
